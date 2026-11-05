@@ -1,41 +1,63 @@
+* {
+    font-family: 'Bookman Old Style';
+}
+
 body {
-    height: 100vh;
+    background-color: aliceblue;
+}
+
+header, footer {
+    background-color: skyblue;
+    text-align: center;
+    padding: 1px;
+    border-radius: 15px;
 }
 
 main {
     display: flex;
-    height: 50vh;
 }
 
 .box1 {
-    background-color: bisque;
-    width: 75%;
-    height: 100%;
+    width: 90%;
 }
 
 .box2 {
     display: flex;
-    height: 65%;
 }
 
 aside {
-    background-color: aqua;
-    width: 25%;
-    height: 100%;
+    width: 10%;
+    height: 700px;
+    overflow: hidden;
+}
+
+aside img {
+    width: 100%;
 }
 
 nav {
-    background-color: blue;
-    width: 100%;
-    height: 35%;
+    width: 90%;
+    text-align: center;
 }
 
 section {
-    background-color: blueviolet;
-    width: 50%;
-    height: 100%;
+    width: 45%;
+    height: 640px;
 }
 
-.color-brown {
-    background-color: brown;
+span {
+    font-size: 200%;
+    cursor: pointer;
+}
+
+button {
+    background-color: skyblue;
+    width: 45%;
+    border-radius: 15px;
+    padding: 15px 40px;
+    margin: 3px 2%;
+}
+
+input, select {
+    margin: 3px;
 }
