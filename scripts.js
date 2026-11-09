@@ -27,3 +27,36 @@ function rezerwacja() {
     })
 }
 
+let prev = document.getElementById('prev');
+let next = document.getElementById('next');
+let slider = document.getElementById('slider');
+let city = document.getElementById('city');
+let tabCity = ["Barcelona", "Londyn", "Rzym"];
+let tabPictures = ["1.jpg", "2.jpg", "3.jpg"];
+let imgStart = 0;
+
+function prevNextFunction(clickElem) {
+    if(clickElem === 'prev') {
+        imgStart--;
+    } else {
+        imgStart++;
+    }
+    
+    if(imgStart > 2) {
+        imgStart = 0;
+    }
+    
+    if (imgStart < 0) {
+        imgStart = 2;
+    }
+    console.log(imgStart);
+
+    city.innerHTML = tabCity[imgStart];
+    slider.setAttribute('src', tabPictures[imgStart]);
+
+}
+
+
+
+
+
